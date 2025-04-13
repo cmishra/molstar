@@ -93,6 +93,7 @@ export class ViewportControls extends PluginUIComponent<ViewportControlsProps, V
     }
 
     render() {
+        console.log('show screenshot controls', this.plugin.config.get(PluginConfig.Viewport.ShowScreenshotControls));
         return <div className={'msp-viewport-controls'}>
             <div className='msp-viewport-controls-buttons'>
                 <div className='msp-hover-box-wrapper'>
